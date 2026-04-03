@@ -1,0 +1,153 @@
+:root {
+  color-scheme: dark;
+  --bg: #0b0f1a;
+  --bg-alt: #11162a;
+  --card: #1b2339;
+  --text: #f5f7ff;
+  --muted: #a9b1c7;
+  --accent: #7c8dff;
+  --border: #2b3550;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "SF Pro Text", "SF Pro Display", -apple-system, system-ui, sans-serif;
+  background: radial-gradient(circle at top, #141a2c 0%, var(--bg) 45%);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 24px 72px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: rgba(11, 15, 26, 0.9);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+}
+
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: var(--text);
+}
+
+.hero {
+  padding: 40px 0 24px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: var(--accent);
+  color: #0b0f1a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.section {
+  margin-top: 32px;
+  padding: 24px;
+  background: rgba(27, 35, 57, 0.6);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+}
+
+.section h2 {
+  margin-top: 0;
+}
+
+.section ul {
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.footer {
+  margin-top: 48px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.link-list {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.link-list a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
