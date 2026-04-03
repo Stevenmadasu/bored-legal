@@ -1,12 +1,12 @@
 :root {
-  color-scheme: dark;
-  --bg: #0b0f1a;
-  --bg-alt: #11162a;
-  --card: #1b2339;
-  --text: #f5f7ff;
-  --muted: #a9b1c7;
-  --accent: #7c8dff;
-  --border: #2b3550;
+  color-scheme: light;
+  --bg: #f7f2e9;
+  --bg-alt: #d2d2d2;
+  --card: #ffffff;
+  --text: #3f3f3f;
+  --muted: #6b6b6b;
+  --accent: #848484;
+  --border: #d2d2d2;
 }
 
 * {
@@ -16,7 +16,7 @@
 body {
   margin: 0;
   font-family: "SF Pro Text", "SF Pro Display", -apple-system, system-ui, sans-serif;
-  background: radial-gradient(circle at top, #141a2c 0%, var(--bg) 45%);
+  background: var(--bg);
   color: var(--text);
   line-height: 1.6;
 }
@@ -32,7 +32,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 16px 24px;
-  background: rgba(11, 15, 26, 0.9);
+  background: rgba(247, 242, 233, 0.9);
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
@@ -103,7 +103,7 @@ body {
   padding: 10px 16px;
   border-radius: 12px;
   background: var(--accent);
-  color: #0b0f1a;
+  color: #f7f2e9;
   font-weight: 600;
   text-decoration: none;
 }
@@ -111,7 +111,7 @@ body {
 .section {
   margin-top: 32px;
   padding: 24px;
-  background: rgba(27, 35, 57, 0.6);
+  background: #ffffff;
   border-radius: 16px;
   border: 1px solid var(--border);
 }
